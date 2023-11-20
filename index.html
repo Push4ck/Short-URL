@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/favico.png" sizes="32x32" type="images/png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet"href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Short URL</title>
+</head>
+<body>
+    <div class="container">
+        <i class="uil uil-link"></i>
+        <h1>URL Shortener</h1>
+        <label for="originalUrl">Enter URL To shortener </label>
+        <input type="text" id="originalUrl" placeholder="https://example.com/">
+        <div class="buttons">
+            <button id="reload-btn">Clear</button>
+            <button id="short-btn">Short It</button>
+        </div>
+        <label for="shortenedUrl">Shortened URL </label>
+        <textarea id="shortenedUrl" rows="3" readonly></textarea>
+        <div class="alert" id="success-alert">
+            <span class="close-btn" id="close-alert">&times;</span>
+            <strong>Success!</strong> URL copied to clipboard.
+        </div>
+        <button id="copy-btn">Copy URL</button>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
